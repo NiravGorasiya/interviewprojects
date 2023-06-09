@@ -3,20 +3,22 @@ import React, { useState, useRef, useEffect } from 'react'
 const Tail = () => {
     const [status, setStatus] = useState([]);
     const [selectedValue, setSelectedValue] = useState('')
-    const prevCountRef = useRef(selectedValue);
-
-    useEffect(() => {
-        prevCountRef.current = status
-    }, [selectedValue])
 
     function changeStatus(e) {
         setSelectedValue(e.target.value)
     }
 
-    console.log(selectedValue, prevCountRef.current[prevCountRef.current.length - 1]);
     const handleSubmit = (e) => {
         e.preventDefault()
-        setStatus([...status, selectedValue]);
+        let temp = [...status]
+        let previous = temp[status?.length - 1]
+        const lastValue = previous[previous?.length - 1]
+        if (lastValue === selectedValue) {
+            temp.push(selectedValue)
+        } else {
+            temp[status.length - 1] += selectedValue
+        }
+        setStatus(temp);
         setSelectedValue('')
     }
 
@@ -32,19 +34,11 @@ const Tail = () => {
                 <tbody>
                     {
                         status?.map((item, index) => {
-                            if (prevCountRef.current[prevCountRef.current.length - 1] === selectedValue) {
-                                return (
-                                    <tr key={index}>
-                                        <td>{item}</td>
-                                    </tr>
-                                )
-                            } else {
-                                return (
-                                    <tr key={index}>
-                                        <td>{item}</td>
-                                    </tr>
-                                )
-                            }
+                            return (
+                                <tr key={index}>
+                                    <td>{item}</td>
+                                </tr>
+                            )
                         })
                     }
                 </tbody>

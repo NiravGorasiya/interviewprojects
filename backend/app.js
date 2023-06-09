@@ -22,7 +22,11 @@ app.get('/activeuser', (req, res) => {
         date.setHours(hour);
         date.setMinutes(0);
         date.setSeconds(0);
+        userActiveData.map((item) => {
+            const today = new Date()
+            const endday = new Date(item.timestamp)
 
+        })
         // Add 1 hour to the current hour
         date.setHours(date.getHours() + 1);
 
