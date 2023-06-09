@@ -1,0 +1,102 @@
+[
+    {
+        "id": 6,
+        "timestamp": "2023-05-08T18:57:49.328Z",
+        "actionType": "logout"
+    },
+    {
+        "id": 9,
+        "timestamp": "2023-05-08T19:38:13.347Z",
+        "actionType": "login"
+    },
+    {
+        "id": 3,
+        "timestamp": "2023-05-08T20:03:25.378Z",
+        "actionType": "logout"
+    },
+    {
+        "id": 5,
+        "timestamp": "2023-05-08T20:34:44.392Z",
+        "actionType": "login"
+    },
+    {
+        "id": 9,
+        "timestamp": "2023-05-08T20:49:43.837Z",
+        "actionType": "logout"
+    },
+    {
+        "id": 8,
+        "timestamp": "2023-05-08T21:31:36.427Z",
+        "actionType": "login"
+    },
+    {
+        "id": 2,
+        "timestamp": "2023-05-08T22:29:07.844Z",
+        "actionType": "login"
+    },
+    {
+        "id": 1,
+        "timestamp": "2023-05-08T23:40:46.237Z",
+        "actionType": "logout"
+    },
+    {
+        "id": 3,
+        "timestamp": "2023-05-08T23:50:08.171Z",
+        "actionType": "login"
+    },
+    {
+        "id": 7,
+        "timestamp": "2023-05-09T01:39:22.857Z",
+        "actionType": "logout"
+    },
+    {
+        "id": 1,
+        "timestamp": "2023-05-09T06:52:59.327Z",
+        "actionType": "login"
+    },
+    {
+        "id": 7,
+        "timestamp": "2023-05-09T07:07:53.531Z",
+        "actionType": "login"
+    },
+    {
+        "id": 5,
+        "timestamp": "2023-05-09T08:49:53.704Z",
+        "actionType": "logout"
+    },
+    {
+        "id": 0,
+        "timestamp": "2023-05-09T09:00:15.864Z",
+        "actionType": "logout"
+    },
+    {
+        "id": 6,
+        "timestamp": "2023-05-09T11:25:34.672Z",
+        "actionType": "login"
+    },
+    {
+        "id": 4,
+        "timestamp": "2023-05-09T13:12:50.570Z",
+        "actionType": "login"
+    },
+    {
+        "id": 0,
+        "timestamp": "2023-05-09T15:08:00.908Z",
+        "actionType": "login"
+    },
+    {
+        "id": 8,
+        "timestamp": "2023-05-09T16:13:09.712Z",
+        "actionType": "logout"
+    },
+    {
+        "id": 2,
+        "timestamp": "2023-05-09T17:29:32.970Z",
+        "actionType": "logout"
+    },
+    {
+        "id": 4,
+        "timestamp": "2023-05-09T17:30:40.567Z",
+        "actionType": "logout"
+    }
+]
