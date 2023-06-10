@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 
 const Tail = () => {
-    const [status, setStatus] = useState([]);
+    const [status, setStatus] = useState(["H"]);
     const [selectedValue, setSelectedValue] = useState('')
 
     function changeStatus(e) {
@@ -11,12 +11,15 @@ const Tail = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         let temp = [...status]
+        console.log(temp, "temp");
         let previous = temp[status?.length - 1]
+        console.log(previous, "previous");
         const lastValue = previous[previous?.length - 1]
+        console.log(lastValue, 'lastvalue');
         if (lastValue === selectedValue) {
             temp.push(selectedValue)
         } else {
-            temp[status.length - 1] += selectedValue
+            temp[status?.length - 1] += selectedValue
         }
         setStatus(temp);
         setSelectedValue('')
